@@ -1,24 +1,28 @@
-# import requests
+# import speech_recognition as sr
+# import pyttsx3
 
-# url = "https://microsoft-translator-text.p.rapidapi.com/languages"
+# r = sr.Recognizer()
 
-# querystring = {"api-version":"3.0"}
+# def SpeakText(command):
+#     engine = pyttsx3.init()
+#     engine.say(command)
+#     engine.runAndWait()
 
-# headers = {
-# 	"x-rapidapi-key": "703c09c28dmshfae0db001cbbb13p1d23f7jsn1b51b53328f3",
-# 	"x-rapidapi-host": "microsoft-translator-text.p.rapidapi.com"
-# }
 
-# response = requests.get(url, headers=headers, params=querystring)
-# if response.headers['Content-Type'] == 'application/json':
+# while(1):
 #     try:
-#         data = response
-#         print(data.json())
-#     except requests.exceptions.JSONDecodeError as e:
-#         print("Error decoding JSON:", e)
-#         # Handle the error gracefully (e.g., retry, log error, use default values)
-# else:
-#     # Handle non-JSON content
-#     print(f"Warning: Unexpected content type: {response.headers['Content-Type']}")
-#     # You might need to parse HTML, plain text, or another format here (if applicable)
+#         with sr.Microphone() as source2:
+#             r.adjust_for_ambient_noise(source2, duration=0.2)
+#             audio2 = r.listen(source2)
 
+#             MyText = r.recognize_sphinx(audio2)
+#             MyText = MyText.lower()
+
+#             print("Did you say", MyText)
+#             SpeakText(MyText)
+
+#     except sr.RequestError as e:
+#         print(f"Could not request results {e}")
+    
+#     except sr.UnknownValueError:
+#         print("An unknown error occured")
