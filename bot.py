@@ -26,7 +26,7 @@ def lang_handler(message):
     text = ("Hi there, welcome to chT.\n"
             "Just text anything and I'll translate it to your preferred language.\n"
             "The format is simple, type /lang followed by the source and target language codes.\n"
-            "Example: /lang fr en \nTranslates from French to English.\n"
+            "Example: /lang french english \nTranslates from French to English.\n"
             "Example: /lang en de \nTranslates from English to German.\n"
             "Here is a list of some country short codes to help you get started:\n"
             "English: en\nFrench: fr\nGerman: de\nSpanish: es\nItalian: it\n"
