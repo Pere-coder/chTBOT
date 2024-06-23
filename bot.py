@@ -34,17 +34,6 @@ def lang_handler(message):
             "Portuguese: pt\nArabic: ar\nKorean: ko\nDutch: nl\n"
             "Greek: el\nHebrew: he\nSwedish: sv\nTurkish: tr\n"
             "Polish: pl\nThai: th\nVietnamese: vi\nIndonesian: id\n"
-            "Danish: da\nNorwegian: no\nFinnish: fi\nCzech: cs\n"
-            "Hungarian: hu\nRomanian: ro\nBulgarian: bg\nSlovak: sk\n"
-            "Ukrainian: uk\nBengali: bn\nUrdu: ur\nMalay: ms\n"
-            "Persian: fa\nSerbian: sr\nCroatian: hr\nSlovenian: sl\n"
-            "Lithuanian: lt\nLatvian: lv\nEstonian: et\nSwahili: sw\n"
-            "Amharic: am\nFilipino: fil\nBosnian: bs\nAlbanian: sq\n"
-            "Macedonian: mk\nArmenian: hy\nGeorgian: ka\nMongolian: mn\n"
-            "Nepali: ne\nPashto: ps\nSinhala: si\nSomali: so\n"
-            "Tamil: ta\nTelugu: te\nMarathi: mr\nPunjabi: pa\n"
-            "Gujarati: gu\nMalayalam: ml\nKannada: kn\nBurmese: my\n"
-            "Khmer: km\nLao: lo\nTibetan: bo\nYiddish: yi\n"
             "Zulu: zu\nXhosa: xh\nAfrikaans: af\nMaori: mi\n"
             "Samoan: sm\nFijian: fj\nTongan: to\n")
     bot.reply_to(message, text)
